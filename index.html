@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alvaro Alvarez | Portfolio</title>
+<style>
+  :root {
+    --paper: #f4f6f8;
+    --denim: #1f3157;
+    --denim-soft: #4a5b7d;
+    --thread: #e8b62c;
+    --ink: #1a2133;
+    --card: #ffffff;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  a { color: var(--denim); text-underline-offset: 3px; }
+  a:hover { color: #0f1c38; }
+  a:focus-visible {
+    outline: 3px solid var(--thread);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Header: denim fabric with a running-stitch seam along the bottom */
+  header {
+    background: var(--denim);
+    color: #fff;
+    padding: 4.5rem 1.5rem 4rem;
+    border-bottom: 4px dashed var(--thread);
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0 0 0.5rem;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(2.6rem, 8vw, 4.5rem);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .tagline {
+    margin: 0;
+    color: #cfd8ea;
+    font-size: 1.125rem;
+    max-width: 34rem;
+  }
+
+  main { padding: 3rem 1.5rem 4rem; }
+
+  section { margin-bottom: 3.25rem; }
+
+  h2 {
+    margin: 0 0 1rem;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.75rem;
+    color: var(--denim);
+  }
+
+  p { margin: 0 0 1rem; max-width: 40rem; }
+
+  /* Cards use a stitched outline, echoing the sewing work */
+  .stitched {
+    background: var(--card);
+    border: 2px dashed var(--denim-soft);
+    border-radius: 6px;
+    padding: 1.5rem 1.5rem 1.25rem;
+  }
+
+  .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .project-list h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.2rem;
+    color: var(--denim);
+  }
+
+  .project-list p { margin: 0 0 0.75rem; }
+
+  .project-list a { font-weight: 600; }
+
+  .final h3 {
+    margin: 0;
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.6rem;
+    color: var(--denim);
+  }
+
+  footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--denim-soft);
+    font-size: 0.95rem;
+    border-top: 1px solid #d9dfe8;
+  }
+
+  @media (max-width: 480px) {
+    header { padding: 3rem 1.25rem 2.5rem; }
+    main { padding: 2rem 1.25rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Alvaro Alvarez</h1>
+    <p class="tagline">Media and maker programming at the UCR Library.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Alvaro's key responsibility is to develop educational programming, provide outreach,
+      and hold consultations on a variety of topics related to media and maker projects at UCR.
+    </p>
+    <p>
+      Alvaro earned his BS in Computer Science and Engineering and his MBA in Organizational
+      Leadership and Information Technology, both from the University of La Verne.
+      He joined the library in 2020.
+    </p>
+  </section>
+
+  <section id="final-project">
+    <h2>Final Project</h2>
+    <div class="stitched final">
+      <h3>Animatronic Lamp</h3>
+      <!-- Add a description, photos, or a link to your final project here. -->
+    </div>
+  </section>
+
+  <section id="weekly-work">
+    <h2>Weekly Work</h2>
+    <ul class="project-list">
+      <li class="stitched">
+        <h3>Cable Organizer</h3>
+        <p>
+          For week one's sewing project, I hand-stitched this organizer using the ladder,
+          running, and invisible stitches, then finished it with a buttonhole made on the sewing machine.
+        </p>
+        <a href="https://drive.google.com/file/d/1a27aQ0jpHpAk_jCfcyONv7kZQK9rxvfb/view?usp=sharing"
+           target="_blank" rel="noopener noreferrer">View the Cable Organizer project</a>
+      </li>
+      <li class="stitched">
+        <h3>Blender Pokémon Model</h3>
+        <p>
+          After learning Blender, I used a reference image of Girafarig to build a 3D model,
+          then 3D printed it in the makerspace.
+        </p>
+        <a href="https://drive.google.com/file/d/192zpeQQlPuEhHrHSMXQfA2G8l4AmNX7z/view?usp=sharing"
+           target="_blank" rel="noopener noreferrer">View the Blender Pokémon Model project</a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  &copy; Alvaro Alvarez
+</footer>
+
+</body>
+</html>
