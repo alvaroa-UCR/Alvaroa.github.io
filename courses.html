@@ -38,12 +38,101 @@
   a:hover{color:var(--accent-dark)}
   footer{margin-top:2.5rem;padding:1.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
   @media (max-width:34rem){.hero{flex-direction:column-reverse;align-items:flex-start}.photo{width:8rem;height:8rem}}
+
+  .course{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:8px;padding:1.75rem;margin-bottom:2rem}
+  .course-head h3{font-family:Georgia,"Times New Roman",serif;font-size:1.6rem;line-height:1.2;margin:0 0 .25rem}
+  .course-sub{margin:0 0 .75rem;color:var(--muted);font-style:italic}
+  .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.25rem;padding:0;list-style:none}
+  .badges li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.15rem .8rem;font-size:.9rem;font-weight:600}
+  .badges li.hl{background:var(--maker);border-color:var(--maker);color:#14213d}
+  .course h4{font-size:1.05rem;margin:1.5rem 0 .5rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px}
+  table{border-collapse:collapse;width:100%;min-width:36rem;font-size:.95rem}
+  th,td{text-align:left;padding:.55rem .75rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--paper);font-size:.85rem;text-transform:uppercase;letter-spacing:.05em}
+  tr:last-child td{border-bottom:0}
+  tr.mine td:first-child{border-left:4px solid var(--maker)}
+  .note{font-size:.9rem;color:var(--muted);margin:.5rem 0 0}
+  details{border:1px solid var(--line);border-radius:6px;padding:.6rem 1rem;margin-top:1rem}
+  summary{cursor:pointer;font-weight:600}
+  details ol{margin:.75rem 0 .25rem;padding-left:1.4rem}
+  details li{margin-bottom:.35rem}
+  .btn{display:inline-block;margin-top:1.25rem;background:var(--accent);color:#fff;text-decoration:none;padding:.6rem 1.2rem;border-radius:6px;font-weight:600}
+  .btn:hover{background:var(--accent-dark);color:#fff}
+  @media (prefers-color-scheme:dark){.btn{color:#0f1626}.btn:hover{color:#0f1626}}
 </style>
 </head>
 <body>
 <nav><div class="wrap"><a class="brand" href="index.html">Alvaro Alvarez</a><a href="cv.html">CV</a><a href="projects.html">Projects</a><a href="courses.html" aria-current="page">Courses</a><a href="presentations.html">Presentations</a></div></nav>
 <div class="wrap">
-<header><h1>Courses</h1><p class="role">Courses taught and attended</p><hr class="stitch"></header><main><section><div class="card"><h3>Coming soon</h3><p class="soon">Course listings will appear here.</p></div></section></main>
+<header><h1>Courses</h1><p class="role">Courses I have taught, newest first</p><hr class="stitch"></header>
+<main>
+<section>
+
+<!-- ============ COURSE: start ============ -->
+<article class="course">
+<div class="course-head">
+<h3>Fabrication and Media Design</h3>
+<p class="course-sub">Making in the Physical and Digital World</p>
+</div>
+<ul class="badges">
+<li class="hl">Fall 2026</li>
+<li>UCR Library Honors Ignition Seminar</li>
+<li>4 units</li>
+<li>Co-taught with Jing Han</li>
+</ul>
+<p>This was the first credit-bearing course taught by Research Services at the UCR Library. The seminar introduces students to hands-on making across physical and digital domains. The first half covers physical fabrication (vector design, laser cutting, electronics, 3D printing, and video production) in the Creat'R Lab, the makerspace at UCR's Orbach Science Library. The second half moves to interactive fiction, creative coding, machine learning, and critical AI practice. Students documented their work throughout and built a public portfolio on GitHub.</p>
+<p>I led Weeks 1&ndash;4, the physical fabrication half of the course.</p>
+
+<h4>Schedule</h4>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Week</th><th>Topic</th><th>Instructor</th><th>Tools</th></tr></thead>
+<tbody>
+<tr class="mine"><td>1</td><td>2D Design &amp; Textile Foundations + GitHub Setup</td><td>Alvaro</td><td>Inkscape, Laser Cutter, Cricut</td></tr>
+<tr class="mine"><td>2</td><td>Logic, Circuits &amp; Animatronics</td><td>Alvaro</td><td>Arduino, Tinkercad, Raspberry Pi</td></tr>
+<tr class="mine"><td>3</td><td>Additive Manufacturing (3D Printing)</td><td>Alvaro</td><td>Blender, Fusion 360, Tinkercad</td></tr>
+<tr class="mine"><td>4</td><td>Animation, Editing &amp; VFX</td><td>Alvaro</td><td>DaVinci Resolve, Blender VFX</td></tr>
+<tr><td>5</td><td>Writing as Code / Code as Writing</td><td>Jing</td><td>Twine, Tracery, Voyant Tools</td></tr>
+<tr><td>6</td><td>Creative Code &amp; Games</td><td>Jing</td><td>p5.js, Bitsy</td></tr>
+<tr><td>7</td><td>Machine Learning &amp; Creative AI</td><td>Jing</td><td>Teachable Machine, ml5.js, p5.js</td></tr>
+<tr><td>8</td><td>Local AI &amp; Critical Practice</td><td>Jing</td><td>Ollama, LM Studio</td></tr>
+<tr><td>9</td><td>Final Project Work Session</td><td>Both</td><td>Student's choice</td></tr>
+<tr><td>10</td><td>Final Project Presentations</td><td>Both</td><td>Student's choice</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Rows marked with a yellow edge are the weeks I taught.</p>
+
+<details>
+<summary>Learning outcomes</summary>
+<ol>
+<li>Operate physical fabrication tools including laser cutters, Cricut machines, and 3D printers to produce original objects</li>
+<li>Wire and program basic electronic circuits using Arduino and simulate them in Tinkercad</li>
+<li>Produce a short video project using non-linear editing software and basic compositing techniques</li>
+<li>Build an interactive text-based narrative using Twine or generative grammar using Tracery</li>
+<li>Create a browser-based generative or interactive sketch/game using p5.js or Bitsy</li>
+<li>Train and apply a machine learning model using Teachable Machine and ml5.js</li>
+<li>Run and critically evaluate a locally hosted AI model, comparing it to cloud-based alternatives</li>
+<li>Maintain a public GitHub portfolio documenting process and reflection across all eight projects</li>
+</ol>
+</details>
+
+<a class="btn" href="Fabrication_and_Media_Design_Syllabus.pdf" target="https://drive.google.com/file/d/13Rpqw29jzDrerh-GUG5wzOMFnQ4DCMBr/view?usp=sharing" rel="noopener">Read the full syllabus (PDF)</a>
+</article>
+<!-- ============ COURSE: end ============ -->
+
+<!--
+  TO ADD A NEW COURSE:
+  1. Copy everything from "COURSE: start" to "COURSE: end" above.
+  2. Paste it ABOVE the existing course so the newest course appears first.
+  3. Replace the title, subtitle, badges, description, schedule rows, outcomes, and PDF link.
+  4. Put the new syllabus PDF in this same folder.
+  Delete the schedule table or the outcomes block if a course doesn't need them.
+-->
+
+</section>
+</main>
 <footer><p>Alvaro Alvarez, UCR Library</p></footer>
 </div>
 </body>
