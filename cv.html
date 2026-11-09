@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV | Alvaro Alvarez</title>
+<style>
+  :root{--paper:#f3f5f7;--surface:#fff;--ink:#14213d;--muted:#4a5568;--accent:#3a4fd7;--accent-dark:#2b3cae;--maker:#f2b705;--line:#cdd5df;--nav:#14213d;--navink:#eef1f6}
+  @media (prefers-color-scheme:dark){:root{--paper:#0f1626;--surface:#182238;--ink:#eef1f6;--muted:#b4bfd1;--accent:#8da0ff;--accent-dark:#b4c0ff;--line:#35435f;--nav:#0a101d}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:1.0625rem;line-height:1.65}
+  .wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+  nav{background:var(--nav);border-bottom:4px solid var(--maker)}
+  nav .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem 1.5rem;padding-top:.5rem;padding-bottom:.5rem}
+  nav .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:var(--navink);text-decoration:none;margin-right:auto;font-size:1.1rem}
+  nav a{color:var(--navink);text-decoration:none;font-weight:600;padding:.4rem .15rem;border-bottom:3px solid transparent}
+  nav a:hover{border-bottom-color:var(--maker)}
+  nav a[aria-current="page"]{border-bottom-color:var(--maker)}
+  nav a:focus-visible,a:focus-visible{outline:3px solid var(--maker);outline-offset:3px;border-radius:2px}
+  header{padding:3rem 0 1.5rem}
+  .hero{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+  .photo{width:10rem;height:10rem;border-radius:1.5rem;object-fit:cover;flex:none;border:4px solid var(--surface);box-shadow:0 6px 20px rgba(20,33,61,.25)}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,7vw,4rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 .75rem}
+  .role{margin:0;color:var(--muted);font-size:1.1rem}
+  .stitch{border:0;border-top:3px dashed var(--maker);margin:2rem 0 0}
+  section{padding:2rem 0 .5rem}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.75rem;margin:0 0 1rem}
+  p{margin:0 0 1rem;max-width:40rem}
+  .card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:6px;padding:1.5rem;margin-bottom:1rem}
+  .card h3{font-size:1.3rem;margin:0 0 .25rem}
+  .card p:last-child{margin-bottom:0}
+  .soon{color:var(--muted)}
+  .work-list{list-style:none;margin:0;padding:0}
+  .work-list li{border-left:3px dashed var(--maker);padding:.25rem 0 .25rem 1.25rem;margin-bottom:1.75rem}
+  .work-list h3{font-size:1.2rem;margin:0 0 .25rem}
+  .work-list p{margin:0 0 .5rem;color:var(--muted)}
+  a{color:var(--accent);text-underline-offset:3px;font-weight:600}
+  a:hover{color:var(--accent-dark)}
+  footer{margin-top:2.5rem;padding:1.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+  @media (max-width:34rem){.hero{flex-direction:column-reverse;align-items:flex-start}.photo{width:8rem;height:8rem}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="index.html">Alvaro Alvarez</a><a href="cv.html" aria-current="page">CV</a><a href="projects.html">Projects</a><a href="courses.html">Courses</a><a href="presentations.html">Presentations</a></div></nav>
+<div class="wrap">
+<header><h1>CV</h1><p class="role">Curriculum vitae</p><hr class="stitch"></header><main>
+<section><h2>Position</h2>
+<div class="card"><h3>UCR Library</h3>
+<p>Develops educational programming, provides outreach, and holds consultations on media and maker projects. Joined in 2020.</p></div></section>
+<section><h2>Education</h2>
+<div class="card"><h3>MBA, Organizational Leadership and Information Technology</h3><p>University of La Verne</p></div>
+<div class="card"><h3>BS, Computer Science and Engineering</h3><p>University of La Verne</p></div></section>
+</main>
+<footer><p>Alvaro Alvarez, UCR Library</p></footer>
+</div>
+</body>
+</html>
